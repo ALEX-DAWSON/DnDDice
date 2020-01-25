@@ -19,9 +19,9 @@ public class Dice {
     private String name;
     private int roll;
      
-    public Dice(String n, int max, int min, int multiply){
+    public Dice(String n, int max){
         name = n;
-        roll = (random.nextInt(max) + min) * multiply;
+        roll = random.nextInt(max) + 1;
         date = new Date();
     }
     

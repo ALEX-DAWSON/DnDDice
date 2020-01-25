@@ -14,7 +14,7 @@ import java.text.*;
 public class DnDDice extends javax.swing.JFrame {
 
     /**
-     * Creates new form DnDDIce
+     * Creates new form DnDDice
      */
     public DnDDice() {
         initComponents();
@@ -129,14 +129,14 @@ public class DnDDice extends javax.swing.JFrame {
         percOutput.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         percOutput.setForeground(new java.awt.Color(0, 0, 255));
         percOutput.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        percOutput.setText("90");
+        percOutput.setText("100");
         percOutput.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         d10Output.setBackground(new java.awt.Color(204, 0, 0));
         d10Output.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         d10Output.setForeground(new java.awt.Color(0, 0, 255));
         d10Output.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        d10Output.setText("9");
+        d10Output.setText("10");
         d10Output.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         d8Bttn.setText("Roll D8");
@@ -369,37 +369,37 @@ public class DnDDice extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void d20BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d20BttnActionPerformed
-        dice = new Dice("D20", 20, 1, 1);
+        dice = new Dice("D20", 20);
         d20Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d20BttnActionPerformed
 
     private void d12BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d12BttnActionPerformed
-        dice = new Dice("D12", 12, 1, 1);
+        dice = new Dice("D12", 12);
         d12Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d12BttnActionPerformed
 
     private void d10BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d10BttnActionPerformed
-        dice = new Dice("D10", 10, 0, 1);
+        dice = new Dice("D10", 10);
         d10Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d10BttnActionPerformed
 
     private void d8BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d8BttnActionPerformed
-        dice = new Dice("D8", 8, 1, 1);
+        dice = new Dice("D8", 8);
         d8Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d8BttnActionPerformed
 
     private void d6BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d6BttnActionPerformed
-        dice = new Dice("D6", 6, 1, 1);
+        dice = new Dice("D6", 6);
         d6Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d6BttnActionPerformed
 
     private void d4BttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d4BttnActionPerformed
-        dice = new Dice("D4", 4, 1, 1);
+        dice = new Dice("D4", 4);
         d4Output.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_d4BttnActionPerformed
@@ -434,7 +434,7 @@ public class DnDDice extends javax.swing.JFrame {
     }//GEN-LAST:event_clearBttnActionPerformed
 
     private void percBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_percBttnActionPerformed
-        dice = new Dice("Percentile", 10, 0, 10);
+        dice = new Dice("Percentile", 100);
         percOutput.setText(dice.getRoll());
         txtOutput.append(dice.toString());
     }//GEN-LAST:event_percBttnActionPerformed
