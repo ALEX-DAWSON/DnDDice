@@ -114,6 +114,7 @@ public class DnDDice extends javax.swing.JFrame {
         d12Output.setText("12");
         d12Output.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        txtOutput.setEditable(false);
         txtOutput.setColumns(20);
         txtOutput.setRows(5);
         jScrollPane1.setViewportView(txtOutput);
@@ -186,6 +187,7 @@ public class DnDDice extends javax.swing.JFrame {
         calcLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         calcLabel.setText("Calculator");
 
+        calcOutput.setEditable(false);
         calcOutput.setColumns(20);
         calcOutput.setRows(5);
         jScrollPane2.setViewportView(calcOutput);
